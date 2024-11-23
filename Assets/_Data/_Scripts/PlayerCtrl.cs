@@ -27,4 +27,7 @@ public class PlayerCtrl : SaiMonoBehaviour
     {
         playerAttack = transform.Find("Ability").GetComponentInChildren<Attack>();    
     }
+
+
+
 }

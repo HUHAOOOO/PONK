@@ -16,11 +16,27 @@ public class PlayerInput : SaiMonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         istAttack = Input.GetKeyDown(keyAttack);
 
-        if (Input.GetKeyDown(keyAttack))
+        if (istAttack)
         {
-            playerCtrl.GetPlayerAttack().TriggerAttack();
+            Attack();
         }
     }
+
+
+    public void Attack()
+    {
+        playerCtrl.GetPlayerAttack().TriggerAttack();
+    }
+
+    //lm tam thoi
+    //HAM atack
+    //public void ButtonAttack()
+    //{
+    //    istAttack = true; // ko chay dc anim vi Update gan isAttack = 0 lien tuc r
+    //    Attack();
+    //}
+
 }

@@ -30,13 +30,13 @@ public class AnimatorCtrl : SaiMonoBehaviour
         if (playerCtrl.GetPlayerInput().istAttack)
         {
             ChangeAnimationState(PLAYER_ATTACK);
+            
         }
         // neu an z thi attack
         // x dodge
 
         // Chem xong quay ve idle bug
         ChangeAnimationState(PLAYER_IDLE);
-
     }
 
     private void ChangeAnimationState(string newAnimation)
